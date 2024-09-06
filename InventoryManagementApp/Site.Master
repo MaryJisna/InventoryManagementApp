@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="InventoryManagementApp.SiteMaster" %>
+
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="PageTitle" runat="server" /></title>
+    <link href="Styles/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+            <h1>Inventory Management System</h1>
+        </div>
+        <div id="main-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+       <%-- <div id="footer">
+            <p>&copy; 2024 Inventory Management System</p>
+        </div>--%>
+    </form>
+</body>
+</html>
